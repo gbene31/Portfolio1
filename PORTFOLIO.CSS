@@ -334,6 +334,9 @@ button:hover {
 }
 }
 @media (max-width :450px) {
+  .a{
+    display: none;
+  }
   .rem{
   font-family: sans-serif;
   font-size: 0.8em;
