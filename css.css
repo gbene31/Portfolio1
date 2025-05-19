@@ -1,0 +1,558 @@
+ body{
+    background: #111;
+  }
+  *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  .container{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+  }
+  .contain{
+    transform: translate(3em,-1.5em);
+    width: 10%;
+    height: 0em;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+  }
+   .containe{
+    font-size: 1em;
+    place-self: center;
+    transform: translate(0em,-6em);
+    width: 10%;
+    height: 0em;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+  }
+  p{
+    color: white;
+  }
+  p,.p1{
+    font-size: 2em;
+    transform: translate(1em,0.8em);
+    
+  }
+  .p1{
+    color: red;
+  }
+  .a{
+    transform: translate(0em,2.4em);
+    place-self: center;
+    position: relative;
+    z-index: 1;
+  }
+  .href{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+  }
+  .btn{
+    background: red;
+    border: none;
+    cursor: pointer;
+    width: 5.9em;
+    height: 2.5em;
+    border-radius: 1em;
+    float: right;
+    position: relative;
+    transform: translate(-2em,0.5em);
+    z-index: 1;
+    color: white;
+  }
+  .btn:hover{
+    scale: 1.08;
+  }
+  .btn1:hover{
+    scale: 1.02;
+  }
+  .src{
+    background-size: cover;
+    height: 35em;
+    width: 100%;
+    transform: translate(0em,-3.3em);
+    animation: src  10s ease-in-out infinite forwards;
+  }
+  .text{
+    color: white;
+    width: 26%;
+    transform:translate(2em,-24em) ;
+    opacity: 0;
+    animation: moveup 0.9s linear forwards;
+  }
+  @keyframes moveup {
+    100%{
+      opacity: 1;
+      transform:translate(2em,-26.5em) ;
+    }
+  }
+  .input{
+    transform:translate(0em,2em) ;
+    width: 20em;
+    height: 3em;
+    border: none;
+    outline: none;
+    border-radius: 0.9em;
+  }
+  .h1{
+    font-size: 3em;
+  }
+  .h2{
+    transform:translate(0em,0.4em) ;
+    color: red;
+    font-size: 2em;
+  }
+  .paragraph{
+    transform:translate(0em,0.8em) ;
+    font-size: 1.2em;
+    width: 30em;
+  }
+  .btn1{
+    background: red;
+    border: none;
+    cursor: pointer;
+    width: 12.9em;
+    height: 3.5em;
+    border-radius: 1em;
+    transform: translate(0em,2.2em);
+    z-index: 1;
+    color: white;
+    position: absolute;
+  }
+  .img{
+    transform: translate(0em,-6em);
+    place-self: center;
+  }
+  .im{
+    transform: translate(0em,-9em);
+    place-self: center;
+  }
+  .sub-container{
+        transform: translate(0em,-9em);
+        place-items: center;
+    }
+    .line{
+        background: white;
+        width: 2.5em;
+        height: 0.3em;
+        border-radius: 1em;
+    }
+    .line1{
+        background: white;
+        width: 2.5em;
+        height: 0.3em;
+        border-radius: 1em;
+        transform: translate(0em,1.3em);
+    }
+    .Fashion{
+        color: white;
+        font-size: 2em;
+        transform: translate(0em,0.3em);
+    }
+   /* CSS */
+.hidden {
+  border-radius: 2em;
+  padding: 35px 20px ;
+ width: 20em;
+ height: 22em;
+ place-self: center;
+ /* margin-left: 7em; */
+ transform: translate(0em,5em);
+}
+.sub-section{
+  place-self: center;
+  transform: translate(-7em,5em);
+  float: right;
+  color: white;
+  width: 30%; 
+}
+.section5{
+  place-self: center;
+  background: rgba(41, 41, 41, 0.753);
+  height: 8em;
+  width: 90%;
+  text-align: center;
+  transform: translate(0em,13em);
+  animation: section5 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
+}
+@keyframes section5 {
+  from{
+    width: 10%;
+  }
+   to{
+    width: 90%;
+  }
+}
+.text4{
+  color: white;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  transform: translate(0em,1em);
+}
+.input1{
+  transform: translate(2em,3em);
+  width: 22%;
+  height: 3em;
+  border-radius: 1.5em;
+  text-align: center;
+  outline: none;
+}
+.btn3{
+  border: none;
+  padding: 5px 13px;
+  transform: translate(-3em,3em);
+  border-radius: 1.1em;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+.href:hover{
+  color: red;
+}
+.step{
+  background: red;
+  width: 100%;
+  height: 0.1em;
+  transform: translate(0em,18.5em);
+}
+.step1{
+  float: right;
+  width: 60%;
+  height: 32em;
+  transform: translate(0em,18.5em);
+   animation: section linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes section {
+  from{
+    opacity: 0;
+    filter: blur(0.5em);
+    width: 0em;
+  }
+  to{
+    opacity: 1;
+  }
+}
+section{
+  display: grid;
+  place-items: center;
+  transform: translate(0em,-5.5em);
+}
+.images{
+  width: 100%;
+  height: 30em;
+  background-size: cover;
+  transform: translate(0em,8.5em);
+  animation: images linear;
+   animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+@keyframes images {
+  from{
+    opacity: 0;
+    filter: blur(0.2em);
+    width: 0em;
+  }
+  to{
+    opacity: 1;
+  }
+}
+.i{
+  display: inline-block;
+  font-size: 5.2em;
+  color: red;
+  transform: translate(0em,-2.2em);
+}
+.btn6{
+  background: black;
+  color: white;
+  padding: 15px 16px;
+  width: 12%;
+  z-index: 1;
+  border-radius: 1em;
+  border: none;
+  cursor: pointer;
+  transform: translate(0em,-12.5em);
+}
+.btn6:hover{
+  scale: 1.01;
+  background: transparent;
+  border: 2px solid red;
+}
+.rival{
+   transform: translate(0em,-8.9em);
+  color: white;
+  font-size: 1.3em;
+  width: 40%;
+}
+.section6{
+  width: 100%;
+
+}
+.cloth{
+  transform: translate(0em,-26.7em);
+  width: 60%;
+  height: 40em;
+  float: right;
+}
+.look1{
+  width: 100%;
+  background: red;
+  height: 0.1em;
+}
+.look2{
+  width: 100%;
+  background: red;
+  height: 0.1em;
+  transform: translate(0em,1.7em);
+}
+.look3{
+  width: 100%;
+  background: red;
+  height: 0.1em;
+  transform: translate(0em,1.5em);
+  float: right;
+}
+.marquee{
+  color: white;
+  transform: translate(0em,0.9em);
+}
+.slide{
+  width: 55%;
+  height: 30em;
+  transform: translate(0em,1.7em);
+   float: right;
+}
+.end{
+  background: white;
+  width: 100%;
+  height: 15em;
+  position: absolute;
+  margin-top: 40em;
+}
+.our{
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.7em;
+  transform: translate(0.8em,3em);
+  width: 35%;
+}
+.Content{
+    background: ;
+    position: absolute;
+    width: 17.6em;
+    height: 6em;
+    padding: 10px 0px;
+    transform: translate(1.2em,2.6em);
+    overflow: hidden;
+}
+.product-name{
+    font-size: larger;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+}
+.price{
+    font-size: larger;
+    font-size: 1.2em;
+    float: right;
+    color: white;
+}
+.chart{
+    padding: 8.2px 9px;
+    width: 35%;
+    font-size: 0.8em;
+    transform: translate(0em,0.4em);
+     border-radius: 2em;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.buy{
+    padding: 8.3px 0px;
+    width: 38%;
+    font-size: 0.8em;
+    float: right;
+    transform: translate(4.2em,0.4em);
+    border-radius: 2em;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.Content1{
+    position: absolute;
+    width: 17.6em;
+    height: 6em;
+    padding: 10px 0px;
+    transform: translate(21.5em,2.6em);
+    overflow: hidden;
+}
+.product-name1{
+    font-size: larger;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+}
+.price1{
+    font-size: larger;
+    font-size: 1.2em;
+    float: right;
+    color: white;
+}
+.chart1{
+    padding: 8.2px 9px;
+    width: 35%;
+    font-size: 0.8em;
+    transform: translate(0em,0.4em);
+     border-radius: 2em;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.buy1{
+    padding: 8.3px 0px;
+    width: 38%;
+    font-size: 0.8em;
+    float: right;
+    transform: translate(4.1em,0.4em);
+    border-radius: 2em;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.Content2{
+    position: absolute;
+    width: 17.6em;
+    height: 6em;
+    padding: 10px 0px;
+    transform: translate(41.7em,2.6em);
+    overflow: hidden;
+}
+.product-name2{
+    font-size: larger;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+}
+.price2{
+    font-size: larger;
+    font-size: 1.2em;
+    float: right;
+    color: white;
+}
+.chart2{
+    padding: 8.2px 9px;
+    width: 35%;
+    font-size: 0.8em;
+    transform: translate(0em,0.4em);
+     border-radius: 2em;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.buy2{
+    padding: 8.3px 0px;
+    width: 38%;
+    font-size: 0.8em;
+    float: right;
+    transform: translate(4.2em,0.4em);
+    border-radius: 2em;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.Content3{
+    position: absolute;
+    width: 17.6em;
+    height: 6em;
+    padding: 10px 0px;
+    transform: translate(0em,2.6em);
+    overflow: hidden;
+    margin-left: 61.9em;
+}
+.product-name3{
+    font-size: larger;
+    font-size: 1.5em;
+    color: white;
+    font-weight: bolder;
+}
+.price3{
+    font-size: larger;
+    font-size: 1.2em;
+    float: right;
+    color: white;
+}
+.chart3{
+    padding: 8.2px 9px;
+    width: 35%;
+    font-size: 0.8em;
+    transform: translate(0em,0.4em);
+     border-radius: 2em;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+.buy3{
+    padding: 8.3px 0px;
+    width: 38%;
+    font-size: 0.8em;
+    float: right;
+    transform: translate(4.2em,0.4em);
+    border-radius: 2em;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.chart:hover{
+   background: white;
+   color: #111;
+}
+.chart1:hover{
+   background: white;
+   color: #111;
+}
+.chart2:hover{
+   background: white;
+   color: #111;
+}
+.chart3:hover{
+   background: white;
+   color: #111;
+}
+.buy:hover{
+    background: transparent;
+   color: white;
+   border: 2px solid red;
+}
+.buy1:hover{
+   background: transparent;
+   color: white;
+   border: 2px solid red;
+}
+.buy2:hover{
+   background: transparent;
+   color: white;
+   border: 2px solid red;
+}
+.buy3:hover{
+   background: transparent;
+   color: white;
+   border: 2px solid red;
+}
